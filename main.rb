@@ -77,10 +77,10 @@ class NhentaiDownloader
 
   def rip_image(i)
     begin
-      image = open("https://i.bakaa.me/galleries/#{@id_galleri}/#{i}.png").read
+      image = open("https://i.bakaa.me/galleries/#{@id_galeri}/#{i}.png").read
       ext = 'png'
     rescue OpenURI::HTTPError
-      image = open("https://i.bakaa.me/galleries/#{@id_galleri}/#{i}.jpg").read
+      image = open("https://i.bakaa.me/galleries/#{@id_galeri}/#{i}.jpg").read
       ext = 'jpg'
     end
     title = "./#{@judul}/#{i}.#{ext}"
